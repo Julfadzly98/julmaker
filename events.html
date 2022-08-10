@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>Jul Maker & Co</title>
+    <title>Jul-M Production & Co</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
@@ -26,55 +26,57 @@
        <h1>My Activity</h1>
     </section>
 
+
+
+
 <!-----Events------>
+<br>
+<br>
+<br>
+<br>
+<section class="slideshow-container">
 
-<section class="facilities">
-    <h1>The Events</h1>
-    <p>ICT Trainings</p>
-
-    <div class="row">
-
-       <div class="campus-col">
-           <img src="images/basketball-3.jpg">   
-       </div>
-       <div class="campus-col">
-          <img src="images/test7.jpg">
-       </div>
-       <div class="campus-col">
-          <img src="images/test8.jpg">
-       </div>
-
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="images/basketball-3.jpg" style="width:100%">
     </div>
-
-   <div class="row">
-
-        <div class="campus-col">
-        <img src="images/test1.jpg">   
-        </div>
-        <div class="campus-col">
-        <img src="images/test4.jpg">
-        </div>
-        <div class="campus-col">
-        <img src="images/test3.jpg">
-        </div>
-
-   </div>
-
-   <div class="row">
-
-        <div class="campus-col">
-            <img src="images/test5.jpg">   
-        </div>
-        <div class="campus-col">
-            <img src="images/test6.jpg">
-        </div>
-        <div class="campus-col">
-            <img src="images/test9.jpg">
-       </div>
+  
+    <div class="mySlides fade">
+      <img src="images/cafeteria-4.jpg" style="width:100%">
     </div>
-
-
+  
+    <div class="mySlides fade">
+      <img src="images/library-2.jpg" style="width:100%">
+    </div>
+  
 </section>
+<br>
+<br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+} 
+
+</script>
 
 <!-----Footer------>
 
